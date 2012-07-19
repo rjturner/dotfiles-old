@@ -12,3 +12,7 @@ if [ -d ~/bin ]; then
 elif [ -d ~/.bin ]; then
     export PATH=$HOME/.bin:$PATH
 fi
+
+# Always append to .bash_history
+shopt -s histappend
+export PROMPT_COMMAND='history -a'
