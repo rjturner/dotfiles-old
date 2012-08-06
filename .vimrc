@@ -32,6 +32,8 @@ syntax on                       " Enable syntax highlighting
 """"""""""""
 " Mappings "
 """"""""""""
+let mapleader = ","
+
 " Reflow paragraph and return cursor to starting position
 nnoremap Q mqgqap`q
 vnoremap Q gq
@@ -47,9 +49,16 @@ vmap <S-Tab> <gv
 vmap > >gv
 vmap < <gv
 
+" Edit vimrc with ,v; source it (in other windows/instances) with ,V
+nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>V :source  $MYVIMRC<CR>
+
 """"""""""""
 " Autocmds "
 """"""""""""
+augroup vimrc
+    autocmd!
+    " Load vimrc changes on write
+    autocmd BufWritePost .vimrc source $MYVIMRC
+augroup end
 
-" Load vimrc changes on write
-autocmd! BufWritePost .vimrc source %
