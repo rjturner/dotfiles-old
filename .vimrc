@@ -12,6 +12,10 @@ set nocompatible                " Use vim settings
 set ruler                       " Display ruler
 set splitbelow                  " Put new splits below
 set splitright                  " Put new splits to the right
+set expandtab                   " Never insert tabs (TODO: except in Makefiles)
+set tabstop=8                   " Keep real tabs at 8 spaces
+set softtabstop=2               " Set smaller soft tabs
+set shiftwidth=2                " Set smaller shift width
 set wildmenu                    " Enhance tab completion
 set suffixes+=*.pdf             " Files to demote in wildmenu
 set wildignore+=*.out           " Files to ignore in wildmenu
