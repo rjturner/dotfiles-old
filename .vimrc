@@ -1,6 +1,9 @@
 " Ryan Turner
 " .vimrc
 
+" Initialize pathogen plugin manager
+call pathogen#infect() 
+
 """""""""""
 " Options "
 """""""""""
