@@ -32,6 +32,10 @@ syntax on                       " Enable syntax highlighting
 """"""""""""
 " Mappings "
 """"""""""""
+" Reflow paragraph and return cursor to starting position
+nnoremap Q mqgqap`q
+vnoremap Q gq
+
 " Shift-Tab removes a tab (hopefully)
 imap <S-Tab> <BS>
 
