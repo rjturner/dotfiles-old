@@ -9,6 +9,7 @@ call pathogen#infect()
 """""""""""
 
 syntax on                       " Enable syntax highlighting
+set nocompatible                " Use vim settings
 set ruler                       " Display ruler
 set splitbelow                  " Put new splits below
 set splitright                  " Put new splits to the right
