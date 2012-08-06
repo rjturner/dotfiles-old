@@ -30,6 +30,20 @@ set modelines=3                 " ...in first or last 3 lines
 syntax on                       " Enable syntax highlighting
 
 """"""""""""
+" Mappings "
+""""""""""""
+" Shift-Tab removes a tab (hopefully)
+imap <S-Tab> <BS>
+
+" Normal Mode Shift
+nmap <Tab> >>
+nmap <S-Tab> <<
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+vmap > >gv
+vmap < <gv
+
+""""""""""""
 " Autocmds "
 """"""""""""
 
